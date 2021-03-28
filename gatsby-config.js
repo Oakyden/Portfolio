@@ -33,6 +33,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+          postCssPlugins: [require("tailwindcss")],
+          },
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
